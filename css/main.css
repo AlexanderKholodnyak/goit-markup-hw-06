@@ -570,10 +570,10 @@ address p:last-child {
 
   color: var(--link-contacts-color);
 }
-.join {
+/* .join {
   display: flex;
-  /* align-items: center; */
-}
+  align-items: center;
+} */
 .follow {
   margin-bottom: 21px;
   margin-top: 0px;
@@ -592,7 +592,8 @@ address p:last-child {
   height: 24px;
 }
 .follow-sign {
-  margin-bottom: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
 }
 .copiright {
   padding-top: 21px;
@@ -762,6 +763,29 @@ p.kind-work {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+}
+.input {
+  margin-right: 12px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  height: 50px;
+  width: 358px;
+  background: #2f303a;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form {
+  display: flex;
+  align-items: center;
 }
 .batton-port {
   vertical-align: top;
