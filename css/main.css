@@ -866,6 +866,7 @@ main.main-portfolio {
 
   width: 528px;
   height: 581px;
+  padding: 40px;
 
   background-color: #fff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -875,8 +876,8 @@ main.main-portfolio {
 
 .form {
   padding: 20px;
-  margin: 20px;
-  width: 600px;
+  /* margin: 20px;
+  width: 600px; */
 }
 
 .form-field {
@@ -885,6 +886,14 @@ main.main-portfolio {
   margin-bottom: 20px;
 }
 
+.form-field:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+/* .form-field:focus-within .form-icon {
+  fill: var(--accent-color);
+} */
+
 .form-label {
   position: absolute;
   top: 50%;
@@ -892,6 +901,10 @@ main.main-portfolio {
   transform: translateY(-50%);
 
   transition: transform 250ms linear;
+
+  font-size: 14px;
+line-height: 11.14;
+letter-spacing: 0.01em;
 }
 
 .form-input {
@@ -900,6 +913,48 @@ main.main-portfolio {
   padding: 10px 20px;
   padding-left: 40px;
   font: inherit;
-  border-radius: 3px;
-  border: 1px solid #2a2a2a;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  border-radius: 4px;
 }
+.form-title {
+  margin-bottom: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.form-field .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background-color: tomato;
+}
+/* .form-field .form-icon {
+  fill: #212121;
+} */
+.form-field:focus-within > .form-label,
+.form-input:not(:placeholder-shown) + .form-label{
+  transform: translate(-30px, -50px);
+  color: var(--accent-color);
+  font-size: 12px;
+  line-height: 1.17;
+
+}
+.form-input:not(:placeholder-shown), .form-input:focus {
+    outline: 1px solid var(--accent-color);
+    border-color: var(--accent-color);
