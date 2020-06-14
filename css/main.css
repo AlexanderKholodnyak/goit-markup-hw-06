@@ -903,8 +903,8 @@ main.main-portfolio {
   transition: transform 250ms linear;
 
   font-size: 14px;
-line-height: 11.14;
-letter-spacing: 0.01em;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
 }
 
 .form-input {
@@ -948,13 +948,14 @@ letter-spacing: 0.01em;
   fill: #212121;
 } */
 .form-field:focus-within > .form-label,
-.form-input:not(:placeholder-shown) + .form-label{
-  transform: translate(-30px, -50px);
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translate(-30px, -40px);
   color: var(--accent-color);
-  font-size: 12px;
-  line-height: 1.17;
-
+  /* font-size: 12px;
+  line-height: 1.17; */
 }
-.form-input:not(:placeholder-shown), .form-input:focus {
-    outline: 1px solid var(--accent-color);
-    border-color: var(--accent-color);
+.form-input:not(:placeholder-shown),
+.form-input:focus {
+  outline: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
+}
