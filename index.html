@@ -514,7 +514,7 @@
           <label class="form-field">
             <input type="text" class="form-input" name="name" placeholder=" " />
             <span class="icon"
-              ><img src="./images/form-phone.svg" alt="Имя" class="form-icon"
+              ><img src="./images/form-name.svg" alt="Имя" class="form-icon"
             /></span>
             <span class="form-label">Имя</span>
           </label>
@@ -546,12 +546,13 @@
 
           <label class="form-field">
             <textarea
+              class="textarea"
               name="comment"
               rows="5"
               cols="45"
-              placeholder="Оставьте комментарий"
+              placeholder=" "
             ></textarea>
-            <span class="form-label">Комментарий</span>
+            <span class="textarea-label form-label">Комментарий</span>
           </label>
 
           <label class="field">
@@ -572,7 +573,13 @@
             <span class="batton-port">Отправить</span>
           </button>
         </form>
-        <button data-modal-close>Закрыть</button>
+        <button data-modal-close class="button-close">
+          <div class="button-position">
+            <span
+              ><img src="./images/form-close.svg" alt="Имя" class="icon-close"
+            /></span>
+          </div>
+        </button>
       </div>
     </div>
 
