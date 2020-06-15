@@ -1017,6 +1017,7 @@ main.main-portfolio {
 .field {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
 .contract-text {
