@@ -513,10 +513,11 @@
           <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
           <label class="form-field">
             <input type="text" class="form-input" name="name" placeholder=" " />
-            <span class="icon"
-              ><img src="./images/form-name.svg" alt="Имя" class="form-icon"
-            /></span>
+
             <span class="form-label">Имя</span>
+            <svg class="form-icon">
+              <use href="./images/sprite-form.svg#icon-form-name"></use>
+            </svg>
           </label>
 
           <label class="form-field">
@@ -527,7 +528,9 @@
               placeholder=" "
             />
             <span class="form-label">Телефон</span>
-            <span class="icon"></span>
+            <svg class="form-icon">
+              <use href="./images/sprite-form.svg#icon-form-phone"></use>
+            </svg>
           </label>
 
           <label class="form-field">
@@ -538,11 +541,10 @@
               placeholder=" "
             />
             <span class="form-label">Почта</span>
-            <span class="icon"></span>
+            <svg class="form-icon">
+              <use href="./images/sprite-form.svg#icon-form-email"></use>
+            </svg>
           </label>
-
-          <!-- <label for="email"> </label>
-          <input type="email" id="email" placeholder="E-mail" class="input" /> -->
 
           <label class="form-field">
             <textarea
@@ -562,11 +564,10 @@
               name="agreement"
               value="agreement"
             />
-            <span class="icon"></span>
-            <span class="label"
-              >Соглашаюсь с рассылкой и принимаю<a href=""
-                >Условия договора</a
-              ></span
+            <span class="checkbox-label"></span>
+            <span
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="contract-text">Условия договора</a></span
             >
           </label>
           <button type="submit" class="button primary button-f">
