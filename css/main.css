@@ -1018,7 +1018,6 @@ main.main-portfolio {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  border: 1px solid black;
 }
 .contract-text {
   text-decoration: underline;
